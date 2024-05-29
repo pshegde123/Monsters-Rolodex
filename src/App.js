@@ -25,7 +25,7 @@ const App = () => {
       useEffect(()=>{
         const searchResults = monsters.filter((character)=>character.name.toLowerCase().includes(searchField))
         setFilteredMonsters(searchResults)
-      },[ searchField, filteredMonsters]);
+      },[searchField]);
 
   return (
     <div className="App">
